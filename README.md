@@ -1,5 +1,7 @@
-Note: I used some ideas from this http://www.drewtempleton.com/
 This is the second Udacity project to complete my Front End Nano Degree. 
+
+*Note: I used some ideas from this http://www.drewtempleton.com/*
+
 
 # Instructions given to me to complete the project
 ## How do I complete this project?
