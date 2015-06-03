@@ -187,9 +187,6 @@ var resume = {
 	"addMap": function() {
 		$("#mapDiv").append(googleMap);
 	},
-	"addMarkers": function() {
-
-	},
 	"logClickLocation": function() {
 		// Log clicks quiz
 		$(document).click(function(loc){
