@@ -204,6 +204,6 @@ var resume = {
 		this.addMap();
 		this.logClickLocation();
 	}
-}
+};
 
 resume.displayResume();
