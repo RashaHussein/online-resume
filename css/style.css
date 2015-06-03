@@ -258,7 +258,11 @@ span {
   width: 20%;
   height: 16px;
   float: left;
+  /* Add browsers support */
   -webkit-animation: w20 1s ease forwards;
+  -moz-animation: w20 1s ease forwards;
+  -o-animation: w20 1s ease forwards;
+  animation: w20 1s ease forwards;
 }
 .green {
   background-color: #2DECC6;
@@ -276,9 +280,23 @@ span {
   background-color: #e74c3c;
 }
 
+/* Add support to all browsers */
 @-webkit-keyframes w20 {
-    from { width: 0%; }
-    to { width: 20%; }
+  from { width: 0%; }
+  to { width: 20%; }
+}
+@-moz-keyframes w20 {
+  from { width: 0%; }
+  to { width: 20%; }
+}
+@-o-keyframes w20 {
+  from { width: 0%; }
+  to { width: 20%; }
+}
+/* Standard syntax */
+@keyframes w20 {
+  from { width: 0%; }
+  to { width: 20%; }
 }
 
 @media only screen and (max-width: 1024px) {
