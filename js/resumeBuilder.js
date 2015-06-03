@@ -11,7 +11,7 @@ var bio = {
 	"welcomeMessage": "Let's Build Stuff",
 	"skills": ["Being Awesome", "Building Websites", "Writing great Javascript code", "Public Speaking", "Blogging", "Winning hackathons!"],
 	"biopic": "images/rasha.jpg",
-	display: function(){
+	"display": function(){
 		var formattedName = HTMLheaderName.replace("%data%", bio["name"]);
 		var formattedRole = HTMLheaderRole.replace("%data%", bio["role"]);
 
@@ -69,7 +69,7 @@ var work = {
 			"description": "Build a mentor mentee matching platform for girls in tech."
 		}
 	],
-	display: function(){
+	"display": function(){
 		var jobs = work.jobs;
 		for (job in jobs) {
 			var formattedEmployer = HTMLworkEmployer.replace("%data%", jobs[job]["employer"]);
@@ -149,7 +149,7 @@ var education = {
 			"url": "https://goo.gl/q94wza"
 		}
 	],
-	display: function(){
+	"display": function(){
 		var formattedSchoolName = HTMLschoolName.replace("%data%", education["schools"][0]["name"]);
 		var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", education["schools"][0]["degree"]);
 		var formattedSchoolDates = HTMLschoolDates.replace("%data%", education["schools"][0]["dates"]);
@@ -176,13 +176,13 @@ var education = {
 };
 
 var resume = {
-	addMap: function() {
+	"addMap": function() {
 		$("#mapDiv").append(googleMap);
 	},
-	addMarkers: function() {
+	"addMarkers": function() {
 
 	},
-	logClickLocation: function() {
+	"logClickLocation": function() {
 		// Log clicks quiz
 		$(document).click(function(loc){
 			var x = loc.pageX;
@@ -191,7 +191,7 @@ var resume = {
 			logClicks(x, y);
 		});
 	},
-	displayResume: function() {
+	"displayResume": function() {
 		bio.display();
 		work.display();
 		projects.display();
