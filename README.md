@@ -1,5 +1,13 @@
-Note: I used some ideas from this http://www.drewtempleton.com/
+# Online Resume
+This is the second Udacity project to complete my Front End Nano Degree. 
 
+# Live Site
+[Rasha's Resume](http://rashahussein.github.io/online-resume/)
+
+*Note: I used some ideas from this http://www.drewtempleton.com/*
+
+
+# Instructions given to me to complete the project
 ## How do I complete this project?
 
 1. Go to the [Javascript Basics course](https://www.udacity.com/course/ud804) and select "View Course Materials."
